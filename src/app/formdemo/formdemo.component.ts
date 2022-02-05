@@ -1,15 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-formdemo',
-  templateUrl: './formdemo.component.html',
+  templateUrl: './formdemo2.component.html',
   styleUrls: ['./formdemo.component.css']
 })
-export class FormdemoComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit(): void {
+export class FormdemoComponent{
+  submit(login: any){
+    console.log("Form submitted", login)
   }
-
 }
